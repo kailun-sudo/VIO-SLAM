@@ -39,7 +39,7 @@ A comprehensive Visual-Inertial Odometry (VIO) SLAM implementation with loop clo
 ### Option 1: Install from source
 
 ```bash
-git clone https://github.com/yourusername/vio-slam.git
+git clone https://github.com/kailun-sudo/VIO-SLAM.git
 cd vio-slam
 pip install -r requirements.txt
 pip install -e .
