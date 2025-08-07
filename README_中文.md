@@ -589,10 +589,10 @@ mypy src/
 
 ## 📞 联系方式
 
-- **项目维护者**：[您的姓名]
-- **邮箱**：your.email@example.com
-- **项目链接**：https://github.com/yourusername/vio-slam
-- **问题反馈**：[GitHub Issues](https://github.com/yourusername/vio-slam/issues)
+- **项目维护者**：王锴仑
+- **邮箱**：kailunw@seas.upenn.edu
+- **项目链接**：https://github.com/kailun-sudo/VIO-SLAM
+- **问题反馈**：[GitHub Issues](https://github.com/kailun-sudo/vio-slam/issues)
 
 ## 🗺️ 发展路线图
 
