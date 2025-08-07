@@ -299,9 +299,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Author**: [Your Name]
-- **Email**: your.email@example.com
-- **Project Link**: https://github.com/yourusername/vio-slam
+- **Author**: kailun wang
+- **Email**: kailunw@seas.upenn.edu
+- **Project Link**: https://github.com/kailun-sudo/vio-slam
 
 ## 🗺️ Roadmap
 
