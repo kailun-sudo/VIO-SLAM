@@ -1,0 +1,46 @@
+# Default VIO-SLAM Configuration
+
+dataset:
+  type: "euroc"              # Dataset type: euroc, tum, kitti
+  camera: "cam0"             # Camera to use: cam0, cam1
+  downsample_factor: 10      # Process every Nth frame
+
+camera:
+  # Camera intrinsics (will be loaded from dataset if available)
+  intrinsics: [458.654, 0.0, 367.215, 0.0, 457.296, 248.375, 0.0, 0.0, 1.0]
+  distortion: []
+
+slam:
+  window_size: 5             # Sliding window size
+  orb_features: 1000         # Number of ORB features to detect
+  
+  loop_closure:
+    enabled: true            # Enable loop closure detection
+    vocabulary_size: 500     # BoW vocabulary size
+    similarity_threshold: 0.7 # Minimum similarity for loop closure
+    min_frame_gap: 30        # Minimum frame gap for loop candidates
+  
+  optimization:
+    max_iterations: 100      # Maximum optimization iterations
+    verbose: false           # Verbose optimization output
+    convergence_threshold: 1e-6
+  
+  imu:
+    gravity: [0, 0, -9.81]   # Gravity vector
+    gyro_noise: 1e-4         # Gyroscope noise density
+    accel_noise: 1e-2        # Accelerometer noise density
+
+visualization:
+  show_features: true        # Show feature matches
+  show_trajectory: true      # Show trajectory plot
+  save_plots: true          # Save plots to files
+  plot_format: "png"        # Plot file format
+  
+processing:
+  use_multiprocessing: false # Enable multiprocessing
+  num_processes: 4          # Number of processes to use
+  
+output:
+  save_trajectory: true     # Save final trajectory
+  save_keyframes: false     # Save keyframe poses
+  results_format: "pickle"  # Results file format: pickle, json, txt
